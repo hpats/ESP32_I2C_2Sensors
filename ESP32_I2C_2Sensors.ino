@@ -97,6 +97,7 @@ void setup(void) {
 
 void loop() {
   server.handleClient();
+  delay(2);//allow the cpu to switch to other tasks
 }
 
 void handle_OnConnect() {
